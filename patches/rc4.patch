@@ -1,13 +1,37 @@
-diff --git a/src/crypto/rc4/rc4_test.go b/src/crypto/rc4/rc4_test.go
-index e7356aa45de..ebffe26df99 100644
---- a/src/crypto/rc4/rc4_test.go
-+++ b/src/crypto/rc4/rc4_test.go
-@@ -2,6 +2,8 @@
- // Use of this source code is governed by a BSD-style
- // license that can be found in the LICENSE file.
- 
-+// test by gil
-+
+diff --git a/src/crypto/rc4/rc4.go b/src/crypto/rc4/rc4.go
+index 67452ec39f0..21a5d110413 100644
+--- a/src/crypto/rc4/rc4.go
++++ b/src/crypto/rc4/rc4.go
+@@ -9,6 +9,7 @@
+ // applications.
  package rc4
  
++/*
  import (
+ 	"crypto/internal/alias"
+ 	"strconv"
+@@ -78,3 +79,5 @@ func (c *Cipher) XORKeyStream(dst, src []byte) {
+ 	}
+ 	c.i, c.j = i, j
+ }
++
++*/
+diff --git a/src/crypto/rc4/rc4_test.go b/src/crypto/rc4/rc4_test.go
+index e7356aa45de..d1f81f26d9b 100644
+--- a/src/crypto/rc4/rc4_test.go
++++ b/src/crypto/rc4/rc4_test.go
+@@ -4,6 +4,8 @@
+ 
+ package rc4
+ 
++/*
++
+ import (
+ 	"bytes"
+ 	"fmt"
+@@ -160,3 +162,5 @@ func BenchmarkRC4_1K(b *testing.B) {
+ func BenchmarkRC4_8K(b *testing.B) {
+ 	benchmark(b, 8096)
+ }
++
++*/
