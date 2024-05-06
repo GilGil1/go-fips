@@ -1,0 +1,13 @@
+diff --git a/src/crypto/rc4/rc4_test.go b/src/crypto/rc4/rc4_test.go
+index e7356aa45de..ebffe26df99 100644
+--- a/src/crypto/rc4/rc4_test.go
++++ b/src/crypto/rc4/rc4_test.go
+@@ -2,6 +2,8 @@
+ // Use of this source code is governed by a BSD-style
+ // license that can be found in the LICENSE file.
+ 
++// test by gil
++
+ package rc4
+ 
+ import (
